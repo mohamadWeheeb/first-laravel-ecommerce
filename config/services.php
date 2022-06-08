@@ -30,4 +30,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'maxmind' => [
+        'account_id' => env('MAXMIND_ACCOUNT_ID') ,
+        'License_key'       =>  env('MAXMIND_LICENSE_KEY') ,
+    ],
+
 ];
