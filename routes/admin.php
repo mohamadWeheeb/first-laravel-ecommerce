@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\NotificationController;
 use App\Http\Controllers\Admin\ProductsController;
 use App\Http\Controllers\Admin\RolesController;
+use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\Admin\TagsController;
 use App\Http\Controllers\Admin\UsersController;
 use Illuminate\Support\Facades\Route;
@@ -36,4 +37,5 @@ Route::middleware(['web' , 'chickUser:admin,super-admin' ])
     Route::resource('tags' , TagsController::class);
     Route::resource('contact' , ContactController::class);
     Route::resource('roles' , RolesController::class);
+    Route::get('settings' , [SettingsController::class , 'index'])->name('setting.index');
 });

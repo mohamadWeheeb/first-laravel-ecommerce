@@ -219,6 +219,14 @@
 							</a>
 						</li>
 
+                        <li class="nav-item">
+							<a href="{{ route('setting.index') }}" class="nav-link">
+								<i class="nav-icon fas fa-th"></i>
+								<p>
+									Setting
+								</p>
+							</a>
+						</li>
 
 					</ul>
 				</nav>
